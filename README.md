@@ -2,8 +2,6 @@
 
 一个轻量级的 Windows 桌面应用程序，用于浏览和收藏来自 [nekos.best](https://nekos.best/) 的随机猫娘图片。
 
-------
-
 ## ✨ 功能特性
 
 * **🎲 随机浏览** - 每次加载获取随机猫娘图片，带来惊喜
@@ -13,14 +11,10 @@
 * **⚡ 异步加载** - 网络请求不阻塞 UI，体验流畅
 * **🔍 随意放大** - 支持拖拽窗口随意放大
 
-------
-
 🖼️ 界面预览（win10）
 --------
 
-![b5b48e42-348e-4dd8-a79c-583d45cdf966](file:///C:/Users/XL/Pictures/Typedown/b5b48e42-348e-4dd8-a79c-583d45cdf966.png)
-
--------
+![04a59164-3218-4fd4-85d2-c922dafadfdb.png](https://picui.ogmua.cn/s1/2026/02/24/699dc229ed3ad.webp)
 
 ## 🔧 技术实现
 
@@ -43,19 +37,16 @@
 | HTTP 请求 | HttpClient       |
 | JSON 解析 | System.Text.Json |
 
-------
-
 📄 许可证
 ------
 
 本项目采用 MIT 许可证 - 详见 [LICENSE](https://chatglm.cn/main/LICENSE) 文件
 
-------
-
 🙏 致谢
 -----
 
 * 图片来源：[nekos.best](https://nekos.best/)
+
 * 贡献值：
   
   <a href="https://github.com/YUZU384/NekoGirl/graphs/contributors">
