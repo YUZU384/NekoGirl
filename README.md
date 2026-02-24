@@ -21,21 +21,17 @@
 ### 架构概览
 
     NekoGirl/
-    ├── web/
-        └── GetImage.cs        # 图片获取核心逻辑
-    ├── window/
-        └── NekoGirl.cs        # 主窗体，处理 UI 交互
-    ├── ProgramHeader.cs       # 程序入口
+    ├── NekoGirl.e             # 图片获取核心逻辑
+    │                          # 主窗体，处理 UI 交互
+    │
     └── README.md              # 本文档
 
 ### 技术栈
 
-| 组件      | 技术选型             |
-| ------- | ---------------- |
-| 框架      | Windows Forms    |
-| 运行时     | .NET 6.0+        |
-| HTTP 请求 | HttpClient       |
-| JSON 解析 | System.Text.Json |
+| 组件      | 技术选型            |
+| --------- | ------------------  |
+| HTTP 请求 | WinApi:GetHttpFile  |
+|  获取链接  | WinApi:InStr&mid&len|
 
 📄 许可证
 ------
