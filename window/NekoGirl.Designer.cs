@@ -100,7 +100,6 @@
             Controls.Add(button_上);
             Controls.Add(pictureBox);
             Icon = (Icon)resources.GetObject("$this.Icon");
-            MaximizeBox = false;
             MdiChildrenMinimizedAnchorBottom = false;
             MinimumSize = new Size(400, 600);
             Name = "NekoGirl";
