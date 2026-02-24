@@ -40,7 +40,8 @@
 📄 许可证
 ------
 
-本项目采用 MIT 许可证 - 详见 [LICENSE](https://chatglm.cn/main/LICENSE) 文件
+本项目采用 MIT 许可证 - 详见 [LICENSE](https://github.com/YUZU384/NekoGirl/blob/master/LICENSE.txt) 文件
+
 
 🙏 致谢
 -----
