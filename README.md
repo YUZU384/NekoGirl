@@ -28,23 +28,22 @@
 
 ### 技术栈
 
-| 组件      | 技术选型            |
-| --------- | ------------------  |
-| HTTP 请求 | WinApi:GetHttpFile  |
-|  获取链接  | WinApi:InStr&mid&len|
+| 组件      | 技术选型               |
+| ------- | ------------------ |
+| HTTP 请求 | WinApi:GetHttpFile |
+| json解析  | zyJsonValue模块      |
 
 📄 许可证
 ------
 
-本项目采用 MIT 许可证 - 详见 [LICENSE](https://github.com/YUZU384/NekoGirl/blob/master/LICENSE.txt) 文件
+本项目采用 AGPL-3.0 license 许可证 - 详见 [LICENSE](https://github.com/YUZU384/NekoGirl/blob/master/LICENSE.txt) 文件
 
-🙏 致谢
------
+## 🙏 致谢
 
 * 图片来源：[nekos.best](https://nekos.best/)
 
 * 贡献者：
-  
-  <a href="https://github.com/YUZU384/NekoGirl/graphs/contributors">
-    <img src="https://contrib.rocks/image?repo=YUZU384/NekoGirl" />
-  </a>
+
+![YUZU384/NekoGirl](https://contrib.rocks/image?repo=YUZU384/NekoGirl "贡献者")
+
+
