@@ -67,7 +67,9 @@ namespace NekoGirl
             if (image == null) return false;
 
             pictureBox.Image?.Dispose();
-            pictureBox.Image = image;
+            // pictureBox.Image = image;
+            // 改为动态适应长宽比
+            SmartFitImageSize(image);
 
             return true;
         }
@@ -99,6 +101,25 @@ namespace NekoGirl
         {
             button_上.Enabled = currentIndex > 0;
             button_下.Enabled = true;
+        }
+
+        private void SmartFitImageSize(Image image) {
+            // 在 PictureBox 尺寸不变的情况下
+            // 适配不同长宽比的图像
+            if (pictureBox == null || image == null) return;
+
+            double imgRatio       = (double)image.Width / (double)image.Height;
+            double containerRatio = (double)pictureBox.Width / (double)pictureBox.Height;
+
+            // 如果图像和容器比例差异大，使用Zoom Mode
+            if (Math.Abs(imgRatio - containerRatio) > 0.2)
+            {
+                pictureBox.SizeMode = PictureBoxSizeMode.Zoom;
+            }
+            else {
+                pictureBox.SizeMode = PictureBoxSizeMode.StretchImage;
+            }
+            pictureBox.Image = image;
         }
     }
 }
