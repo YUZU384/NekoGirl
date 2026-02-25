@@ -40,14 +40,14 @@
 📄 许可证
 ------
 
-本项目采用 MIT 许可证 - 详见 [LICENSE](https://github.com/YUZU384/NekoGirl/blob/master/LICENSE.txt) 文件
+本项目采用 AGPL-3.0 license 许可证 - 详见 [LICENSE](https://github.com/YUZU384/NekoGirl/blob/master/LICENSE.txt) 文件
 
 ## 🙏 致谢
 
 * 图片来源：[nekos.best](https://nekos.best/)
 
 * 贡献者：
-  
-  <a href="https://github.com/YUZU384/NekoGirl/graphs/contributors">
-    <img src="https://contrib.rocks/image?repo=YUZU384/NekoGirl" />
-  </a>
+
+![YUZU384/NekoGirl](https://contrib.rocks/image?repo=YUZU384/NekoGirl "贡献者")
+
+
