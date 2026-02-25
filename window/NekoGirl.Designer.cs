@@ -36,7 +36,7 @@
             pictureBox.Location = new Point(0, 0);
             pictureBox.Margin = new Padding(0);
             pictureBox.Name = "pictureBox";
-            pictureBox.Size = new Size(1335, 780);
+            pictureBox.Size = new Size(444, 620);
             pictureBox.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox.TabIndex = 0;
             pictureBox.TabStop = false;
@@ -45,10 +45,9 @@
             // 
             button_上.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
             button_上.Enabled = false;
-            button_上.Location = new Point(8, 788);
-            button_上.Margin = new Padding(4);
+            button_上.Location = new Point(5, 625);
             button_上.Name = "button_上";
-            button_上.Size = new Size(82, 45);
+            button_上.Size = new Size(55, 30);
             button_上.TabIndex = 0;
             button_上.TabStop = false;
             button_上.Text = "上一只";
@@ -58,10 +57,9 @@
             // button_下
             // 
             button_下.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
-            button_下.Location = new Point(99, 788);
-            button_下.Margin = new Padding(4);
+            button_下.Location = new Point(65, 625);
             button_下.Name = "button_下";
-            button_下.Size = new Size(82, 45);
+            button_下.Size = new Size(55, 30);
             button_下.TabIndex = 0;
             button_下.TabStop = false;
             button_下.Text = "下一只";
@@ -71,10 +69,9 @@
             // button_存
             // 
             button_存.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
-            button_存.Location = new Point(1087, 788);
-            button_存.Margin = new Padding(4);
+            button_存.Location = new Point(279, 625);
             button_存.Name = "button_存";
-            button_存.Size = new Size(98, 45);
+            button_存.Size = new Size(65, 30);
             button_存.TabIndex = 0;
             button_存.TabStop = false;
             button_存.Text = "保存图片";
@@ -84,10 +81,9 @@
             // button_看
             // 
             button_看.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
-            button_看.Location = new Point(1193, 788);
-            button_看.Margin = new Padding(4);
+            button_看.Location = new Point(349, 625);
             button_看.Name = "button_看";
-            button_看.Size = new Size(135, 45);
+            button_看.Size = new Size(90, 30);
             button_看.TabIndex = 0;
             button_看.TabStop = false;
             button_看.Text = "打开保存目录";
@@ -96,38 +92,38 @@
             // 
             // artistLabel
             // 
-            artistLabel.AutoSize = true;
-            artistLabel.Location = new Point(537, 798);
-            artistLabel.Name = "artistLabel";
-            artistLabel.Size = new Size(217, 24);
-            artistLabel.Font = new Font("Microsoft YaHei", button_上.Font.Size);
-            artistLabel.TabIndex = 1;
-            artistLabel.Text = "点击“下一只”开始获取喵~";
-            artistLabel.TextAlign = ContentAlignment.MiddleCenter;
+            artistLabel.Anchor = AnchorStyles.Bottom;
+            artistLabel.Font = new Font("微软雅黑", 9F);
             artistLabel.LinkBehavior = LinkBehavior.NeverUnderline;
             artistLabel.LinkColor = Color.Black;
+            artistLabel.Location = new Point(-98, 630);
+            artistLabel.Margin = new Padding(2, 0, 2, 0);
+            artistLabel.Name = "artistLabel";
+            artistLabel.Size = new Size(595, 20);
+            artistLabel.TabIndex = 1;
+            artistLabel.TabStop = true;
+            artistLabel.Text = "点击“下一只”开始获取喵~";
+            artistLabel.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // NekoGirl
             // 
-            AutoScaleDimensions = new SizeF(144F, 144F);
+            AutoScaleDimensions = new SizeF(96F, 96F);
             AutoScaleMode = AutoScaleMode.Dpi;
-            ClientSize = new Size(1335, 842);
-            Controls.Add(artistLabel);
+            ClientSize = new Size(444, 661);
             Controls.Add(button_看);
             Controls.Add(button_存);
             Controls.Add(button_下);
             Controls.Add(button_上);
             Controls.Add(pictureBox);
+            Controls.Add(artistLabel);
             Icon = (Icon)resources.GetObject("$this.Icon");
-            Margin = new Padding(4);
             MdiChildrenMinimizedAnchorBottom = false;
-            MinimumSize = new Size(589, 872);
+            MinimumSize = new Size(460, 700);
             Name = "NekoGirl";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "NekoGirl-猫娘下载器，随机获取猫娘";
             ((System.ComponentModel.ISupportInitialize)pictureBox).EndInit();
             ResumeLayout(false);
-            PerformLayout();
         }
 
         #endregion

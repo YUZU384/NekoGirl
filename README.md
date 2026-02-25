@@ -1,6 +1,6 @@
 # 🐱 NekoGirl-猫娘下载器，随机获取猫娘
 
-一个轻量级的 Windows 桌面应用程序，用于浏览和收藏来自 [nekos.best](https://nekos.best/) 的随机猫娘图片。
+一个轻量级的 Windows 桌面应用程序，用于浏览和保存来自 [nekos.best](https://nekos.best/) 的随机猫娘图片。
 
 ## ✨ 功能特性
 
@@ -14,7 +14,7 @@
 🖼️ 界面预览（win10）
 --------
 
-![04a59164-3218-4fd4-85d2-c922dafadfdb.png](https://picui.ogmua.cn/s1/2026/02/24/699dc229ed3ad.webp)
+![242e79aa-e8a3-4fc9-b07e-cd1e62e0a5c3.png](https://picui.ogmua.cn/s1/2026/02/26/699f35b904ea3.webp)
 
 ## 🔧 技术实现
 
@@ -42,13 +42,11 @@
 
 本项目采用 MIT 许可证 - 详见 [LICENSE](https://github.com/YUZU384/NekoGirl/blob/master/LICENSE.txt) 文件
 
-
-🙏 致谢
------
+## 🙏 致谢
 
 * 图片来源：[nekos.best](https://nekos.best/)
 
-* 贡献值：
+* 贡献者：
   
   <a href="https://github.com/YUZU384/NekoGirl/graphs/contributors">
     <img src="https://contrib.rocks/image?repo=YUZU384/NekoGirl" />

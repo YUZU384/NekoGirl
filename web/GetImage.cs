@@ -10,7 +10,7 @@ namespace NekoGirl.web
             PooledConnectionLifetime = TimeSpan.FromMinutes(2) // 建议设置为2-5分钟
         })
         {
-            Timeout = TimeSpan.FromSeconds(10)
+            Timeout = TimeSpan.FromSeconds(20)
         };
 
 

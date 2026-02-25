@@ -6,6 +6,7 @@
     <Nullable>enable</Nullable>
     <UseWindowsForms>true</UseWindowsForms>
     <ImplicitUsings>enable</ImplicitUsings>
+    <ApplicationIcon>ico\Neko64x64.ico</ApplicationIcon>
   </PropertyGroup>
 
   <ItemGroup>
