@@ -63,14 +63,21 @@ namespace NekoGirl
 
         private async Task<bool> LoadImageAsync(int index)
         {
+            ModifiedArtistLabel("正在加载图像，请等待喵......", "");
+
             var image = await img.GetImageAsync(index);
-            if (image == null) return false;
+            if (image == null) {
+                ModifiedArtistLabel("点击“下一只”开始获取喵~", "");
+                return false;
+            }
+
 
             pictureBox.Image?.Dispose();
             // pictureBox.Image = image;
             // 改为动态适应长宽比
             SmartFitImageSize(image);
-
+            ModifiedArtistLabel("画师：@" + img.GetImageArtist(index), img.GetArtistLink(index));
+            
             return true;
         }
 
@@ -103,6 +110,8 @@ namespace NekoGirl
             button_下.Enabled = true;
         }
 
+
+        //更改图片框及标签状态
         private void SmartFitImageSize(Image image) {
             // 在 PictureBox 尺寸不变的情况下
             // 适配不同长宽比的图像
@@ -111,6 +120,7 @@ namespace NekoGirl
             double imgRatio       = (double)image.Width / (double)image.Height;
             double containerRatio = (double)pictureBox.Width / (double)pictureBox.Height;
 
+            /*
             // 如果图像和容器比例差异大，使用Zoom Mode
             if (Math.Abs(imgRatio - containerRatio) > 0.2)
             {
@@ -119,7 +129,30 @@ namespace NekoGirl
             else {
                 pictureBox.SizeMode = PictureBoxSizeMode.StretchImage;
             }
+            */
             pictureBox.Image = image;
+        }   
+
+        private void ModifiedArtistLabel(string text, string linkUrl) {
+            // 修改 ArtistLabel 的内容以及超链接
+            if (text.Length > 20) { text = text.Substring(20) + "..."; }
+            artistLabel.Text = text;
+
+            if (!string.IsNullOrWhiteSpace(linkUrl))
+            {
+                artistLabel.LinkBehavior = LinkBehavior.HoverUnderline;
+                artistLabel.LinkColor = Color.FromArgb(65, 105, 225);
+                artistLabel.LinkClicked += (sender, e) =>
+                {
+                    System.Diagnostics.Process.Start(
+                        new System.Diagnostics.ProcessStartInfo { FileName = linkUrl, UseShellExecute = true }
+                    );
+                };
+            }
+            else {
+                artistLabel.LinkBehavior = LinkBehavior.NeverUnderline;
+                artistLabel.LinkColor = Color.Black;
+            }
         }
     }
 }

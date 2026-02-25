@@ -10,11 +10,13 @@ namespace NekoGirl.web
             PooledConnectionLifetime = TimeSpan.FromMinutes(2) // 建议设置为2-5分钟
         })
         {
-            Timeout = TimeSpan.FromSeconds(10)
+            Timeout = TimeSpan.FromSeconds(20)
         };
 
 
         private readonly List<string> imageUrls = [];
+		private readonly List<string> artistNames = [];
+		private readonly List<string> artistLinks = [];
 
 		public int ImageCount => imageUrls.Count;
 
@@ -44,10 +46,22 @@ namespace NekoGirl.web
 						.GetProperty("url")
 						.GetString();
 
+					string? name = doc.RootElement
+						.GetProperty("results")[0]
+						.GetProperty("artist_name")
+						.GetString();
+					
+					string? link = doc.RootElement
+						.GetProperty("results")[0]
+						.GetProperty("artist_href")
+						.GetString();
+
 					if (!string.IsNullOrWhiteSpace(url))
 					{
 						imageUrls.Add(url);
-						Debug.WriteLine($"[成功] 获取URL: {url}");
+						artistNames.Add(name);
+						artistLinks.Add(link);
+						Debug.WriteLine($"[成功] 获取URL: {url}，作者名:{name}");
 					}
 
 					await Task.Delay(100);
@@ -84,6 +98,13 @@ namespace NekoGirl.web
 				Debug.WriteLine($"[图片加载失败] {ex.Message}");
 				return null;
 			}
+		}
+		public string GetImageArtist(int index)
+		{
+			return artistNames[index];
+		}
+		public string GetArtistLink(int index) { 
+			return artistLinks[index];
 		}
 	}
 }
