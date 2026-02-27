@@ -47,7 +47,6 @@
 * 图片来源：[nekos.best](https://nekos.best/)
 
 * 贡献者：
-
-![YUZU384/NekoGirl](https://contrib.rocks/image?repo=YUZU384/NekoGirl "贡献者")
+[![contributors](https://contrib.rocks/image?repo=YUZU384/NekoGirl&max=999)](https://github.com/YUZU384/NekoGirl/graphs/contributors)
 
 
