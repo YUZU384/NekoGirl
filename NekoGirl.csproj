@@ -6,11 +6,15 @@
     <Nullable>enable</Nullable>
     <UseWindowsForms>true</UseWindowsForms>
     <ImplicitUsings>enable</ImplicitUsings>
-    <ApplicationIcon>ico\Neko64x64.ico</ApplicationIcon>
+    <ApplicationIcon>pic\Neko64x64.ico</ApplicationIcon>
   </PropertyGroup>
 
   <ItemGroup>
-    <Content Include="ico\Neko64x64.ico" />
+    <Content Include="pic\Neko64x64.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="ico\" />
   </ItemGroup>
 
 </Project>
