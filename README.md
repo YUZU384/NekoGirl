@@ -14,7 +14,7 @@
 🖼️ 界面预览（win10）
 --------
 
-![242e79aa-e8a3-4fc9-b07e-cd1e62e0a5c3.png](https://picui.ogmua.cn/s1/2026/02/26/699f35b904ea3.webp)
+![242e79aa-e8a3-4fc9-b07e-cd1e62e0a5c3.png](2026-03-15%20001637.png)
 
 ## 🔧 技术实现
 
@@ -49,5 +49,3 @@
 * 贡献者：
 
 ![YUZU384/NekoGirl](https://contrib.rocks/image?repo=YUZU384/NekoGirl "贡献者")
-
-
